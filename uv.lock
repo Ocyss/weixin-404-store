@@ -588,7 +588,7 @@ wheels = [
 [[package]]
 name = "wechatpy"
 version = "2.0.0a26"
-source = { directory = "../../clone/wechatpy" }
+source = { git = "https://github.com/wechatpy/wechatpy#5b8502e3bc4abfee3abae77983e01633ed47cebf" }
 dependencies = [
     { name = "cryptography" },
     { name = "optionaldict" },
@@ -596,16 +596,6 @@ dependencies = [
     { name = "requests" },
     { name = "requests-pkcs12" },
     { name = "xmltodict" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "cryptography", specifier = ">=3.1" },
-    { name = "optionaldict", specifier = ">=0.1.0" },
-    { name = "python-dateutil", specifier = ">=2.5.2" },
-    { name = "requests", specifier = ">=2.4.3" },
-    { name = "requests-pkcs12", specifier = ">=1.7,<2.0" },
-    { name = "xmltodict", specifier = ">=0.11.0" },
 ]
 
 [[package]]
@@ -630,7 +620,7 @@ requires-dist = [
     { name = "pydantic-settings", specifier = ">=2.10.1" },
     { name = "requests", extras = ["socks"], specifier = ">=2.32.4" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.35.0" },
-    { name = "wechatpy", extras = ["cryptography"], directory = "../../clone/wechatpy" },
+    { name = "wechatpy", extras = ["cryptography"], git = "https://github.com/wechatpy/wechatpy" },
 ]
 
 [[package]]

@@ -18,4 +18,4 @@ dependencies = [
 members = ["venv"]
 
 [tool.uv.sources]
-wechatpy = { path = "../../clone/wechatpy" }
+wechatpy = { git = "https://github.com/wechatpy/wechatpy" }
