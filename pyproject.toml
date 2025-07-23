@@ -1,0 +1,21 @@
+[project]
+name = "weixin-404"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beanie>=2.0.0",
+    "fastapi>=0.116.1",
+    "loguru>=0.7.3",
+    "pydantic-settings>=2.10.1",
+    "requests[socks]>=2.32.4",
+    "uvicorn[standard]>=0.35.0",
+    "wechatpy[cryptography]==2.0.0a26",
+]
+
+[tool.uv.workspace]
+members = ["venv"]
+
+[tool.uv.sources]
+wechatpy = { path = "../../clone/wechatpy" }
